@@ -1,0 +1,16 @@
+
+		<h1 class="container" th:text="#{titre}"></h1>
+		<h2 class="container" th:text="#{titre_creation_LO}"></h2>
+		
+		<input class="container" type="text" id="name_partner1" th:placeholder="#{creation_partenaire1}" placeholder="Nom partenaire 1"/>
+		<input class="container" type="text" id="name_partner2" th:placeholder="#{creation_partenaire2}" placeholder="Nom partenaire 2"/>
+		<input class="container" type="text" id="num_partner1" th:placeholder="#{creation_num_partenaire1}" placeholder="Numero partenaire 2"/>
+		<input class="container" type="text" id="num_partner2" th:placeholder="#{creation_num_partenaire2}" placeholder="Numero partenaire 2"/>
+		<input class="container" type="text" id="weddingDate" th:placeholder="#{creation_date_mariage}" placeholder="Date du mariage dd/MM/yyyy"/>
+		<input class="container" type="text" id="creationMail" th:placeholder="#{creation_mail}"/>
+		
+		<button class="btn btn-success container" onclick="submitNewWedding();" th:text="#{bouton_creation_LO}" ></button>
+		<div  class="container" id="resultLabel_idPublic" style="display:none">
+			<label id="label_idPublic_part_fixe" th:text="#{libelle_reference_LO}"></label>
+			<label id="label_idPublic_part_variable"/>
+		</div>

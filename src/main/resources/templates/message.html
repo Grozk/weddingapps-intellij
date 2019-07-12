@@ -1,0 +1,11 @@
+<!--     <h1> Livre d'or de Sarah et Cedric </h1> -->
+	<h1 class="container" th:text="#{titre}"></h1>
+		
+	<textarea class="container" id="textarea_message" th:placeholder="#{placeholder_message_maries}" ></textarea>
+	<input  class="container" type="text" id="text_name" name="text_name" minlength="4" maxlength="20" th:placeholder="#{placeholder_message_nom}" ></input>	
+	<input  class="container" type="tel" id="text_number" name="text_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" th:placeholder="#{placeholder_message_telephone}" ></input>
+		
+	<video class="container" id="video" autoplay></video>
+	<canvas class="container" id="canvas" style="display:none;"></canvas>
+</br>
+	<button class="btn btn-success container" onclick="sendMessageAndVideo()" th:text="#{message_envoyer}"></button>
